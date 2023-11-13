@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Flats from sreality.cz</title>
+
+</head>
+<body>
+<div class="container col-md-8 offset-md-2">
+<h1 class="text-primary">Flats</h1>
+<ul class="thumbnails bootstrap-examples">
+{% for flat in data %}
+    <li class="span4">{{ flat.name }}</li>
+    <img src="{{ flat.image_url }}" alt="">
+{% endfor %}
+    </ul>
+</div>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</body>
+</html>
